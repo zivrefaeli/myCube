@@ -1,0 +1,45 @@
+:root {
+    --gs: .8rem;
+}
+
+.header {
+    background-color: rgb(56, 57, 66);
+    display: flex;
+    gap: var(--ms);
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    /* position: sticky;
+    top: 0; */
+}
+
+.header>a {
+    color: white;
+    padding: var(--ms);
+}
+
+.header>a:hover {
+    color: orange;
+}
+
+.header>a:active {
+    color: greenyellow;
+}
+
+.header :first-child {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    gap: var(--gs);
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: serif;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 2.5rem;
+}

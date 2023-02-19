@@ -1,0 +1,80 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms);
+    width: 60%;
+    user-select: none;
+}
+
+.content .title {
+    margin: var(--ms) 0;
+}
+
+.policy {
+    background-color: rgb(241, 246, 252);
+    padding: var(--ms);
+    overflow: overlay;
+}
+
+.policy div {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.policy div>ul:last-child {
+    margin-bottom: 0;
+}
+
+.policy div:hover {
+    padding: 1rem;
+    border-radius: .4rem;
+    box-shadow: 1px 1px .6rem rgb(177, 177, 177);
+}
+
+.policy>h2 {
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+.policy>h3 {
+    margin: calc(var(--ms)) 0;
+}
+
+.policy> :first-child {
+    margin-top: 0;
+}
+
+.policy> :last-child> :first-child {
+    margin-bottom: .5rem;
+}
+
+.hebrew {
+    direction: rtl;
+}
+
+.app-inputs {
+    display: flex;
+    gap: .3rem;
+    font-family: monospace;
+    margin: .2rem 0;
+}
+
+.app-inputs>span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(10, 0, 117, 0.1);
+    padding: .2rem;
+    border-radius: .2rem;
+}
+
+.hebrew .app-inputs {
+    font-family: 'Aharoni';
+}
+
+
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+}
