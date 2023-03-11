@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/myCube/static/css/main.797e3e99.css",
+    "main.js": "/myCube/static/js/main.f4d261dc.js",
+    "static/media/learn.png": "/myCube/static/media/learn.fddc974c8c3bfd118d0a.png",
+    "static/media/home.png": "/myCube/static/media/home.24ddeb03cb21b421844a.png",
+    "static/media/tournament.png": "/myCube/static/media/tournament.6f80e322d5b85519c125.png",
+    "static/media/Walbaum.ttf": "/myCube/static/media/Walbaum.fecbcd8ca905dcd6841e.ttf",
+    "static/media/get_it_on.png": "/myCube/static/media/get_it_on.aedef56a89b560709089.png",
+    "index.html": "/myCube/index.html",
+    "main.797e3e99.css.map": "/myCube/static/css/main.797e3e99.css.map",
+    "main.f4d261dc.js.map": "/myCube/static/js/main.f4d261dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.797e3e99.css",
+    "static/js/main.f4d261dc.js"
+  ]
+}
