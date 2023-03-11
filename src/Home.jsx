@@ -87,7 +87,7 @@ export default function Home() {
         <p>
           And there is a lot more!
           <br />
-          <a href="/#">Download myCube</a> and learn how to solve the Rubik's Cube.
+          <a href="./#">Download myCube</a> and learn how to solve the Rubik's Cube.
         </p>
       </div>
     </>
