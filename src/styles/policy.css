@@ -1,15 +1,3 @@
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--ms);
-    width: 60%;
-    user-select: none;
-}
-
-.content .title {
-    margin: var(--ms) 0;
-}
-
 .policy {
     background-color: rgb(241, 246, 252);
     padding: var(--ms);
@@ -28,12 +16,7 @@
 .policy div:hover {
     padding: 1rem;
     border-radius: .4rem;
-    box-shadow: 1px 1px .6rem rgb(177, 177, 177);
-}
-
-.policy>h2 {
-    text-decoration: underline;
-    font-family: monospace;
+    box-shadow: 0 0 .5rem rgb(0, 0, 0, 0.1);
 }
 
 .policy>h3 {
@@ -52,14 +35,14 @@
     direction: rtl;
 }
 
-.app-inputs {
+.inputs {
     display: flex;
     gap: .3rem;
     font-family: monospace;
     margin: .2rem 0;
 }
 
-.app-inputs>span {
+.inputs>span {
     display: flex;
     align-items: center;
     text-align: center;
@@ -68,13 +51,6 @@
     border-radius: .2rem;
 }
 
-.hebrew .app-inputs {
+.hebrew .inputs {
     font-family: 'Aharoni';
-}
-
-
-@media (max-width: 600px) {
-    .content {
-        width: 100%;
-    }
 }

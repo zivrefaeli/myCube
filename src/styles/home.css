@@ -1,0 +1,105 @@
+:root {
+    --angle: 10deg;
+    --bs: 1px; /* border size */
+}
+
+@font-face {
+    font-family: 'Walbaum';
+    src: url(../assets/Walbaum.ttf);
+}
+
+.home-title {
+    font-family: 'Walbaum';
+    margin: calc(3 * var(--ms)) 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms);
+    transition: .5s;
+}
+
+.explain>p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.explain img {
+    width: 30%;
+    align-self: center;
+    cursor: pointer;
+    margin-top: var(--ms);
+}
+
+h2.sub-title {
+    font-size: 1.5rem;
+    font-family: 'Bahnschrift';
+    font-weight: lighter;
+    color: #02203c;
+}
+
+.screens {
+    display: flex;
+    gap: var(--ms);
+    justify-content: center;
+}
+
+.screens:hover>:not(:hover) {
+    filter: blur(1px);
+}
+
+img.screen {
+    width: calc((100% - 2 * var(--ms) - 6 * var(--bs)) / 3);
+    border: var(--bs) solid #cecece;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+}
+
+img.screen:hover {
+    z-index: 2;
+    box-shadow: 0px 0px 2rem .1rem rgba(80, 80, 80, 0.25);
+    border: none;
+}
+
+img.screen:first-child:hover {
+    transform: rotateZ(calc(-1 * var(--angle)));
+}
+
+img.screen:nth-child(2):hover {
+    transform: translateY(-1rem);
+}
+
+img.screen:last-child:hover {
+    transform: rotateZ(var(--angle));
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .explain img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .explain img {
+        width: 50%;
+    }
+
+    img.screen:hover {
+        box-shadow: 0px 0px 1rem .1rem rgba(80, 80, 80, 0.25);
+    }
+}

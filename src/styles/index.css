@@ -1,10 +1,15 @@
 :root {
-    --ms: 1rem;
+    --ms: 1rem; /* margin size */
 }
 
 * :not(ul, li) {
     margin: 0;
     padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 div#root {
@@ -16,5 +21,22 @@ div#root {
 
 .title {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Agency FB';
+    font-weight: normal;
+    margin: var(--ms) 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms);
+    width: 60%;
+    user-select: none;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
 }
