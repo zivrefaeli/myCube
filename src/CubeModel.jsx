@@ -2,14 +2,12 @@ import React, { useRef, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Blocks, Type, Face, size, r, R, transform } from './structure'
 
-
 function degreesToRadians(degrees) {
   return degrees * Math.PI / 180
 }
 
 const log = console.log
 const rotateInit = { faceId: null, moving: false, angle: 0, target: 0, delta: -1 }
-
 
 export default function CubeModel(props) {
   const { cubeRef } = props

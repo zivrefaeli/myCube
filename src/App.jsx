@@ -1,8 +1,9 @@
-import React from "react"
-import { Routes, Route } from "react-router-dom"
-import Home from "./Home"
-import Policy from "./Policy"
-import Model from "./Model"
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import Model from './Model'
+import Policy from './Policy'
+import Api from './Api'
 
 function App() {
   return <>
@@ -10,7 +11,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/model' element={<Model />} />
       <Route path='/policy' element={<Policy />} />
-      <Route path='/api' element={<div>api</div>} />
+      <Route path='/api' element={<Api />} />
     </Routes>
   </>
 }

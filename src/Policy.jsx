@@ -23,7 +23,7 @@ export default function Policy() {
         <h3>App Usage</h3>
         <div>
           <span>After installation, the users could login as Guest or Sign Up with:</span>
-          <p className='app-inputs'>
+          <p className='inputs'>
             <span>Username</span>
             <span>Password</span>
             <span>Email</span>
@@ -72,7 +72,7 @@ export default function Policy() {
         <h3>שימוש היישום</h3>
         <div>
           <span>לאחר ההתקנה, יהיה ניתן להתחבר כאורח/ת או להירשם באמצעות:</span>
-          <p className='app-inputs'>
+          <p className='inputs'>
             <span>שם משתמש</span>
             <span>סיסמה</span>
             <span>אימייל</span>
