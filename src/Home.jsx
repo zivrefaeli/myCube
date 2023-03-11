@@ -84,7 +84,11 @@ export default function Home() {
               alt={screen} />
           ))}
         </div>
-        <span>And there is a lot more!</span>
+        <p>
+          And there is a lot more!
+          <br />
+          <a href="/#">Download myCube</a> and learn how to solve the Rubik's Cube.
+        </p>
       </div>
     </>
   )
